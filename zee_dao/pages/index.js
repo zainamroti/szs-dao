@@ -6,7 +6,7 @@ import Web3Modal from "web3modal";
 import {
   DAO_ABI,
   DAO_CONTRACT_ADDRESS,
-  NFT_ABI,
+  NFT_CONTRACT_ABI,
   NFT_CONTRACT_ADDRESS,
 } from "../constants";
 import styles from "../styles/Home.module.css";
@@ -200,7 +200,7 @@ export default function Home() {
   const getZeeCardsNFTContractInstance = (providerOrSigner) => {
     return new Contract(
       NFT_CONTRACT_ADDRESS,
-      NFT_ABI,
+      NFT_CONTRACT_ABI,
       providerOrSigner
     );
   };
